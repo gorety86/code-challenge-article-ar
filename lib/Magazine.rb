@@ -1,26 +1,53 @@
 class Magazine
-    attr_writer :name, :category
-    @@magazines = []
-  
+    attr_accessor :name, :category
+
+    @@amagazine = []
+
     def initialize(name, category)
       @name = name
       @category = category
-      @@magazines << self
-    end
-  
-    def name
-      @name
-    end
-  
-    def category
-      @category
-    end
-  
-    def self.all
-      @@magazines
+      @@magazine << self
+
     end
 
-    def contributors
-        Author.all.select { |author| author.articles.any? { |article| article.magazine == self } }
+
+    def articles
+
+      Article.all.filter {|article| article.magazine == self}
+
     end
+
+
+    def article_titles
+
+      self.articles.map {|article| article.title}
+
+    end
+
+
+    def contributors
+
+      self.articles.map {|article| article.author}.uniq
+
+    end
+
+
+    def contributing_authors
+        magazine_authors = self.articles.map {|article| article.author}
+        authors =  magazine_authors.uniq
+        authors.filter {|author|  magazine_authors.count(author) > 2}
+  
+      end 
+  
+  
+      def self.all
+        @@magazine
+  
+      end
+  
+        def self.find_by_name(name)
+  
+        self.all.find {|magazine| magazine.name == name}
+  
+      end
   end

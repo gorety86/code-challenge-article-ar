@@ -1,11 +1,11 @@
 class Author
-    attr_accessor :name
+    attr_reader :name
 
-    @@all = []
+    @@author = []
 
     def initialize(name)
       @name = name
-      @@all << self
+      @@author << self
 
     end
 
@@ -34,7 +34,7 @@ class Author
     end
 
     def self.all
-        @ll
+        @@author
     end
 end
    
