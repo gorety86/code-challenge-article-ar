@@ -1,11 +1,11 @@
 class Magazine
     attr_writer :name, :category
-    @@all_magazines = []
+    @@magazines = []
   
     def initialize(name, category)
       @name = name
       @category = category
-      @@all_magazines << self
+      @@magazines << self
     end
   
     def name
@@ -17,6 +17,10 @@ class Magazine
     end
   
     def self.all
-      @@all_magazines
+      @@magazines
+    end
+
+    def contributors
+        Author.all.select { |author| author.articles.any? { |article| article.magazine == self } }
     end
   end

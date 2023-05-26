@@ -4,6 +4,5 @@ class Author
             @name = name
         end
     end
-    lorena = Author.new("keith")
-    lorena.name
+   
     
