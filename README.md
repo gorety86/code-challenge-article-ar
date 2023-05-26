@@ -15,17 +15,7 @@ Author - Magazine is a many to many relationship.
     -Object Relationships
     -Arrays and Array Methods
 
-# Project Setup
-
-Once you have the plan in place for the application you want to build take the following steps:
-
-    -Create a new project folder
-    -Create a new GitHub repository (NB: ENSURE IT IS PRIVATE).
-    -Add your TM as a contributor to the project. (This is only for grading purposes. We promise we won't steal your code)
-    -Please make sure you regularly commit to the repository.
-
 # Instructions
-
 Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest. Be careful: some of the later methods rely on earlier ones.
 
 Remember! This code challenge does not have tests. You cannot run rspec and you cannot run learn. You'll need to create your own sample instances so that you can try out your code on your own. Make sure your associations and methods work in the console before submitting.
@@ -36,8 +26,7 @@ Similarly, messy code that works is better than clean code that doesn't. First, 
 
 Before you submit! Save and run your code to verify that it works as you expect. If you have any methods that are not working yet, feel free to leave comments describing your progress.
 
- 
-# Deliverables
+ # Deliverables
 
 -Create the following classes and their respective methods.
 -Setup your application so it runs from a configured run file. 
