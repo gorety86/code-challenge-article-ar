@@ -1,4 +1,5 @@
 class Magazine
+    attr_writer :name, :category
     @@all_magazines = []
   
     def initialize(name, category)
