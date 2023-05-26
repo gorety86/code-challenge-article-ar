@@ -19,6 +19,3 @@ class Magazine
       @@all_magazines
     end
   end
-  
-  lorena = Magazine.new("Luwi", "Fashion")
-  puts lorena.name
