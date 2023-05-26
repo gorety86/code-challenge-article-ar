@@ -9,11 +9,7 @@ class Article
      @@all_articles << self
    end
 
-   def title
-    @title
-   end
-
    def self.all
     @@all_articles
-
+   end
 end
