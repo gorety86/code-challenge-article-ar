@@ -1,3 +1,6 @@
+require_relative 'magazine.rb'
+require_relative 'author.rb'
+
 class Article
    attr_reader :author, :magazine, :title
    @@articles = []
@@ -13,3 +16,6 @@ class Article
     @@articles
    end
 end
+
+name = Author.new("ben")
+puts author.name
