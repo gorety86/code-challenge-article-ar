@@ -2,25 +2,24 @@ require_relative '../config/environment.rb'
 
 mag = Magazine.new("Mag1", "The Star")
 mag = Magazine.new("Mag2", "Nairobian")
-puts Magazine.all.inspect
+mag = Magazine.new("Keith", "Starndard")
+# puts Magazine.all.inspect
 
-name = Author.new("Roy")
-name = Author.new("Monroe")
-puts  Author.all.inspect
+# # name = Author.new("Roy")
+# # name = Author.new("Monroe")
+# # puts  Author.all.inspect
 
-article = Article.new("lorena", "The Star", "Business")
-article1 = Article.new("sean", "Nairobian", "Agriculture")
-puts Article.all.inspect
+# article = Article.new("lorena", "The Star", "Business")
+# article1 = Article.new("sean", "Nairobian", "Agriculture")
+# # puts Article.all.inspect
 
-puts Magazine.all.inspect
+# puts Magazine.find_by_name("Mag1").inspect
 
-puts Magazine.find_by_name("Mag").inspect
+#  puts mag.articles.inspect
 
- puts mag.articles.inspect
+#  puts mag.article_titles.inspect
 
- puts mag.article_titles.inspect
+#  puts mag.contributors.inspect
 
- puts mag.contributors.inspect
-
- puts mag.contributors.inspect
-puts Author.all.inspect
+#  puts mag.contributors.inspect
+# puts Author.all.inspect

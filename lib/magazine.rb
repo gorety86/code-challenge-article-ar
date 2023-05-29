@@ -46,3 +46,5 @@ class Magazine
   
     end
   end
+  # magazine = Magazine.new("paul", "walker")
+  # puts magazine.category

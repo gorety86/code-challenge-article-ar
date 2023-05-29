@@ -37,5 +37,8 @@ class Author
         @@all
     end
 end
+
+# author = Author.new("sean")
+# puts author.name
    
     
