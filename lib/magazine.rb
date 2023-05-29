@@ -1,12 +1,12 @@
 class Magazine
     attr_accessor :name, :category
 
-    @@amagazine = []
+    @@all = []
 
     def initialize(name, category)
       @name = name
       @category = category
-      @@magazine << self
+      @@all << self
 
     end
 
@@ -36,7 +36,7 @@ class Magazine
     end 
   
     def self.all
-        @@magazine
+        @@all
   
     end
   

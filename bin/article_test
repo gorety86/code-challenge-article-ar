@@ -1,0 +1,5 @@
+require_relative '../config/environment.rb'
+
+mag = Magazine.new("Mag1", "The Star")
+mag = Magazine.new("Mag2", "Nairobian")
+puts Magazine.all.inspect

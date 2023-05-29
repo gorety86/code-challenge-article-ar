@@ -1,21 +1,21 @@
-require_relative 'magazine.rb'
-require_relative 'author.rb'
+# require_relative 'magazine.rb'
+# require_relative 'author.rb'
 
 class Article
    attr_reader :author, :magazine, :title
-   @@articles = []
+   @@all = []
 
    def initialize(author, magazine, title)
      @author = author
      @magazine = magazine
      @title = title
-     @@articles << self
+     @@all << self
    end
 
    def self.all
-    @@articles
+    @@all
    end
 end
 
-name = Author.new("ben")
-puts author.name
+# name = Author.new("ben")
+# puts name.name
