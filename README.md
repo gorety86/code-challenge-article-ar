@@ -88,3 +88,7 @@ Before you submit! Save and run your code to verify that it works as you expect.
             Returns an array strings of the titles of all articles written for that magazine
         Magazine#contributing_authors
             Returns an array of authors who have written more than 2 articles for the magazine
+
+
+                            For more information contact:
+                            wagutugorety@gmail.com
